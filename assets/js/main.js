@@ -141,6 +141,45 @@
   });
 
   /**
+   * Experience timeline: nodes reveal as they scroll into view, and each
+   * one expands to show its details when clicked (or activated by keyboard).
+   */
+  const timelineItems = document.querySelectorAll('.timeline-item');
+  if (timelineItems.length) {
+    const timelineObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          timelineObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -10% 0px'
+    });
+
+    timelineItems.forEach(item => {
+      timelineObserver.observe(item);
+
+      const node = item.querySelector('.timeline-node');
+      if (!node) return;
+
+      const toggleDetails = () => {
+        const open = item.classList.toggle('details-open');
+        node.setAttribute('aria-expanded', open ? 'true' : 'false');
+      };
+
+      node.addEventListener('click', toggleDetails);
+      node.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggleDetails();
+        }
+      });
+    });
+  }
+
+  /**
    * Initiate glightbox
    */
   const glightbox = GLightbox({
