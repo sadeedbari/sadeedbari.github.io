@@ -11,27 +11,18 @@
 
   /**
    * Header toggle
+   * The sidebar is open by default; this button lets the user hide it,
+   * and the rest of the page reflows to fill the freed-up space.
    */
   const headerToggleBtn = document.querySelector('.header-toggle');
 
   function headerToggle() {
-    document.querySelector('#header').classList.toggle('header-show');
+    const hidden = document.querySelector('#header').classList.toggle('header-hide');
     headerToggleBtn.classList.toggle('bi-list');
     headerToggleBtn.classList.toggle('bi-x');
+    headerToggleBtn.title = hidden ? 'Show menu' : 'Hide menu';
   }
   headerToggleBtn.addEventListener('click', headerToggle);
-
-  /**
-   * Hide mobile nav on same-page/hash links
-   */
-  document.querySelectorAll('#navmenu a').forEach(navmenu => {
-    navmenu.addEventListener('click', () => {
-      if (document.querySelector('.header-show')) {
-        headerToggle();
-      }
-    });
-
-  });
 
   /**
    * Toggle mobile nav dropdowns

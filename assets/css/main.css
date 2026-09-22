@@ -205,22 +205,19 @@ h6 {
   background: var(--accent-color);
 }
 
-@media (min-width: 1200px) {
-
-  .header~main,
-  .header~#footer {
-    margin-left: 300px;
-  }
+.header~main,
+.header~#footer {
+  margin-left: 300px;
+  transition: margin-left ease-in-out 0.3s;
 }
 
-@media (max-width: 1199px) {
-  .header {
-    left: -100%;
-  }
+.header.header-hide {
+  left: -100%;
 }
 
-.header.header-show {
-  left: 0;
+.header.header-hide~main,
+.header.header-hide~#footer {
+  margin-left: 0;
 }
 
 .header .header-toggle {
