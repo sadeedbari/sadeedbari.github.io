@@ -11,18 +11,40 @@
 
   /**
    * Header toggle
-   * The sidebar is open by default; this button lets the user hide it,
-   * and the rest of the page reflows to fill the freed-up space.
+   * On tablet/desktop the sidebar is open by default and the rest of the
+   * page reflows to fill the freed-up space when it's hidden. On mobile it
+   * starts hidden and opens as a classic overlay menu instead.
    */
+  const header = document.querySelector('#header');
   const headerToggleBtn = document.querySelector('.header-toggle');
+  const mobileQuery = window.matchMedia('(max-width: 767px)');
+
+  if (mobileQuery.matches) {
+    header.classList.add('header-hide');
+    headerToggleBtn.classList.remove('bi-x');
+    headerToggleBtn.classList.add('bi-list');
+    headerToggleBtn.title = 'Show menu';
+  }
 
   function headerToggle() {
-    const hidden = document.querySelector('#header').classList.toggle('header-hide');
+    const hidden = header.classList.toggle('header-hide');
     headerToggleBtn.classList.toggle('bi-list');
     headerToggleBtn.classList.toggle('bi-x');
     headerToggleBtn.title = hidden ? 'Show menu' : 'Hide menu';
   }
   headerToggleBtn.addEventListener('click', headerToggle);
+
+  /**
+   * On mobile the menu overlays the page, so close it after picking a link
+   * to reveal the section just navigated to.
+   */
+  document.querySelectorAll('#navmenu a').forEach(navlink => {
+    navlink.addEventListener('click', () => {
+      if (mobileQuery.matches && !header.classList.contains('header-hide')) {
+        headerToggle();
+      }
+    });
+  });
 
   /**
    * Toggle mobile nav dropdowns
