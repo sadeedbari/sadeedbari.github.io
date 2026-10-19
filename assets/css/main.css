@@ -725,6 +725,72 @@ section,
   background-color: var(--accent-color);
 }
 
+/* Resume: employer block + skills */
+.resume-employer {
+  max-width: 980px;
+  margin: 0 auto 28px;
+  padding: 20px 24px;
+  background: color-mix(in srgb, var(--accent-color), transparent 93%);
+  border-left: 4px solid var(--accent-color);
+  border-radius: 6px;
+}
+
+.resume-employer-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 6px 16px;
+}
+
+.resume-employer h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.resume-employer-role {
+  margin: 6px 0 2px;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.resume-employer-note {
+  margin: 0;
+  font-size: 14.5px;
+  font-style: italic;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.resume-skills {
+  max-width: 980px;
+  margin: 0 auto 36px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 28px;
+}
+
+.resume-skill h5 {
+  margin: 0 0 3px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent-color);
+}
+
+.resume-skill p {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  .resume-skills {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/

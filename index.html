@@ -49,7 +49,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css?v=20260922d" rel="stylesheet">
+  <link href="assets/css/main.css?v=20261019a" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: iPortfolio
@@ -352,38 +352,115 @@ Overland Traveller, seeking inspiration and adventure.
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
-        <p>Engineering &amp; technical consultant with over 7 years of experience leading test automation, software delivery, and digital transformation
-		initiatives across banking and finance. Adept at leading cross-functional teams, driving automation strategy, and ensuring regulatory compliance.
-		Proven track record of mentoring team members and building client relationships that keep engineering efforts aligned with business objectives.
-		Strong consulting and analytical skills with a focus on delivering impactful results.</p>
+        <p>Technical Consultant with 7+ years leading resilience, test automation, and quality engineering programs across banking, government, and payments platforms in Canada, including Integrated Resiliency Testing for a national real-time payments platform. Combines an electrical engineering background with strong analytical, planning, and cross-functional leadership skills, and has independently built and shipped a production software-as-a-service product.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="resume-employer">
+          <div class="resume-employer-head">
+            <h3>IBM Canada Consulting</h3>
+            <span class="timeline-date">Oct 2019 - Present</span>
+          </div>
+          <p class="resume-employer-role">Technical Consultant &rarr; Senior Engineering Consultant &rarr; Engineering Management Consultant, Quality Engineering practice, Toronto</p>
+          <p class="resume-employer-note">Continuously employed full-time throughout this period. Selected client engagements are shown below.</p>
+        </div>
+
+        <div class="resume-skills">
+          <div class="resume-skill"><h5>Resilience &amp; reliability</h5><p>Integrated Resiliency Testing, disaster recovery failover validation, cross-data-center resiliency, automated and manual recovery testing, release readiness</p></div>
+          <div class="resume-skill"><h5>Testing &amp; quality</h5><p>Functional testing (UI and API), ETL testing, test strategy and planning, test data management, defect triage, regression and smoke testing, security and role-based access testing</p></div>
+          <div class="resume-skill"><h5>Automation &amp; tools</h5><p>Selenium, Postman, SoapUI, Insomnia, Apache JMeter, GitHub pipelines, UI and API automation frameworks</p></div>
+          <div class="resume-skill"><h5>Languages</h5><p>Java, Python, SQL, JavaScript</p></div>
+          <div class="resume-skill"><h5>Cloud &amp; data</h5><p>AWS (S3, CloudWatch, DynamoDB, Cognito, CodeCommit), DBeaver, Maven</p></div>
+          <div class="resume-skill"><h5>Product building (personal projects)</h5><p>Next.js, React, TypeScript, Tailwind CSS, Supabase, Stripe, Playwright, Pytest, Docker, Vercel</p></div>
+          <div class="resume-skill"><h5>Delivery &amp; leadership</h5><p>Jira, Zephyr, Confluence, Azure DevOps, Bitbucket, GitHub; onshore and offshore team leadership, stakeholder management, release reporting, presenting to client audiences</p></div>
+          <div class="resume-skill"><h5>Payments &amp; finance domain</h5><p>Real-time payments, Interac, Automated Funds Transfer, cheque, wire, and bill payments, credit union integrations, retail and trading banking, ISO 20022</p></div>
+        </div>
+
         <p class="timeline-hint">Click any node to read more.</p>
 
         <div class="experience-timeline" id="experience-timeline">
 
-          <div class="timeline-item timeline-left" data-type="work">
+          <div class="timeline-item timeline-left" data-type="project">
             <div class="timeline-side timeline-side-left">
             <div class="timeline-card">
               <div class="timeline-node" role="button" tabindex="0" aria-expanded="false">
                 <div class="timeline-node-text">
-                  <span class="timeline-date">Aug 2025 - Present</span>
-                  <h4>Test Development and Dashboard Manager</h4>
-                  <p class="timeline-company">Payments Canada RTR, Canada</p>
+                  <span class="timeline-date">Ongoing</span>
+                  <h4>Willow: Practice Management Platform</h4>
+                  <p class="timeline-company">Sulo Systems &middot; Personal project</p>
                 </div>
                 <i class="bi bi-chevron-down timeline-chevron"></i>
               </div>
               <div class="timeline-details">
                 <div class="timeline-details-inner">
                   <ul>
-                  <li>Created test scenarios and test cases covering real-time payment processing flows, recovery handling, disaster recovery failover, and cross-data-center resiliency for a national real-time payments program.</li>
-                  <li>Owned end-to-end test planning, scheduling, and cycle management across multiple testing cycles and platform-change re-runs.</li>
-                  <li>Managed a testing team executing over 250 test cases, achieving a 98%+ pass rate across all testing cycles.</li>
-                  <li>Led daily defect triage meetings, tracking and driving resolution of issues found during testing.</li>
-                  <li>Wrote summary reports after each testing cycle documenting results, defect status, and key metrics for stakeholders.</li>
-                  <li>Served as primary point of contact between the testing team and client stakeholders, communicating progress, risks, and blockers.</li>
-                  <li>Presented testing results and outstanding defects to stakeholders to support release readiness and go/no-go decisions.</li>
+                  <li>Independently conceived, designed, and shipped a production multi-tenant software-as-a-service platform for therapists, covering scheduling, telehealth video, invoicing and billing, and a client portal. Live at <a href="https://willow.sulosystems.com" target="_blank" rel="noopener">willow.sulosystems.com</a>.</li>
+                  <li>Built with Next.js, React, TypeScript, Tailwind CSS, and Supabase (Postgres, authentication, file storage, Edge Functions), with row-level-security multi-tenancy and multi-factor authentication.</li>
+                  <li>Built directly on Stripe: subscription billing for platform revenue and Stripe Connect so practices are paid directly by their clients.</li>
+                  <li>Integrated Daily.co telehealth video and Resend transactional and inbound email into one product experience.</li>
+                  <li>Wrote automated end-to-end tests with Playwright and deploy through Vercel with GitHub-triggered deployments.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="timeline-rail">
+              <span class="timeline-dot"><i class="bi bi-code-slash"></i></span>
+            </div>
+            <div class="timeline-side timeline-side-right"></div>
+          </div><!-- End Timeline Item -->
+
+          <div class="timeline-item timeline-right" data-type="work">
+            <div class="timeline-side timeline-side-left"></div>
+            <div class="timeline-rail">
+              <span class="timeline-dot"><i class="bi bi-briefcase"></i></span>
+            </div>
+            <div class="timeline-side timeline-side-right">
+            <div class="timeline-card">
+              <div class="timeline-node" role="button" tabindex="0" aria-expanded="false">
+                <div class="timeline-node-text">
+                  <span class="timeline-date">Aug 2025 - Present</span>
+                  <h4>Test Development and Dashboard Manager</h4>
+                  <p class="timeline-company">IBM Canada Consulting &middot; Client: Payments Canada, Real-Time Rail</p>
+                </div>
+                <i class="bi bi-chevron-down timeline-chevron"></i>
+              </div>
+              <div class="timeline-details">
+                <div class="timeline-details-inner">
+                  <ul>
+                  <li>Lead Integrated Resiliency Testing for a national real-time payments platform, validating system behaviour under failure and recovery conditions, including disaster recovery failover, cross-data-center resiliency, and automated and manual recovery.</li>
+                  <li>Created the test scenarios and test cases covering real-time payment processing flows, recovery handling, and cross-data-center resiliency (256 test cases, 98.8% pass rate across multiple testing cycles).</li>
+                  <li>Own end-to-end test planning, scheduling, and cycle management across multiple testing cycles and platform-change re-runs.</li>
+                  <li>Manage the testing team and lead daily defect triage that tracks and drives resolution of issues and reliability weaknesses.</li>
+                  <li>Primary point of contact between the testing team and client stakeholders; write summary reports after each cycle and present results and outstanding defects to support release-readiness and go/no-go decisions.</li>
+                  <li>Partner with infrastructure and platform teams to validate platform changes before rollout, and investigate failures through logs, data, and system behaviour to find root causes.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div><!-- End Timeline Item -->
+
+          <div class="timeline-item timeline-left" data-type="work">
+            <div class="timeline-side timeline-side-left">
+            <div class="timeline-card">
+              <div class="timeline-node" role="button" tabindex="0" aria-expanded="false">
+                <div class="timeline-node-text">
+                  <span class="timeline-date">Sep 2024 - Jul 2025</span>
+                  <h4>Test Strategy and Implementation Developer</h4>
+                  <p class="timeline-company">IBM Canada Consulting &middot; Client: Alberta Health, Digital Health Card</p>
+                </div>
+                <i class="bi bi-chevron-down timeline-chevron"></i>
+              </div>
+              <div class="timeline-details">
+                <div class="timeline-details-inner">
+                  <ul>
+                  <li>Developed and implemented test strategies for backend APIs, database transformations, and system integration for the move from the laminated Health Card to a digital Health Card.</li>
+                  <li>Created test cases from solution design documentation and presented them to stakeholders to confirm coverage and quality.</li>
+                  <li>Executed test cases using SoapUI and supported database testing for the migration of data from legacy to modern cloud systems (extract, transform, load).</li>
+                  <li>Used SQL and DBeaver to automate queries in the Alberta Health Data Warehouse, validating data against design documentation and requirements.</li>
+                  <li>Created test data for required scenarios, including negative scenarios and edge cases, and collaborated with cross-functional teams on integration of new system components.</li>
                   </ul>
                 </div>
               </div>
@@ -404,36 +481,9 @@ Overland Traveller, seeking inspiration and adventure.
             <div class="timeline-card">
               <div class="timeline-node" role="button" tabindex="0" aria-expanded="false">
                 <div class="timeline-node-text">
-                  <span class="timeline-date">Sep 2024 - Jul 2025</span>
-                  <h4>Test Strategy and Implementation Developer</h4>
-                  <p class="timeline-company">Alberta Health - Digital Card Transformation Project, Canada</p>
-                </div>
-                <i class="bi bi-chevron-down timeline-chevron"></i>
-              </div>
-              <div class="timeline-details">
-                <div class="timeline-details-inner">
-                  <ul>
-                  <li>Developed and implemented test strategies for backend APIs, database transformations, and system integration.</li>
-                  <li>Created test cases from solution design documentation and presented them to stakeholders to ensure comprehensive coverage and quality.</li>
-                  <li>Executed test cases using SoapUI and supported database testing for data migration from legacy to modern systems.</li>
-                  <li>Used SQL and DBeaver to automate queries within the Alberta Health Data Warehouse, validating data against design documentation and requirements.</li>
-                  <li>Created test data for required scenarios, including negative scenarios and edge cases.</li>
-                  <li>Collaborated with cross-functional teams to ensure accurate testing and seamless integration of new system components.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div><!-- End Timeline Item -->
-
-          <div class="timeline-item timeline-left" data-type="work">
-            <div class="timeline-side timeline-side-left">
-            <div class="timeline-card">
-              <div class="timeline-node" role="button" tabindex="0" aria-expanded="false">
-                <div class="timeline-node-text">
                   <span class="timeline-date">Mar 2024 - Jul 2024</span>
                   <h4>Test Architect</h4>
-                  <p class="timeline-company">Bank of Nova Scotia, Canada</p>
+                  <p class="timeline-company">IBM Canada Consulting &middot; Client: Scotiabank</p>
                 </div>
                 <i class="bi bi-chevron-down timeline-chevron"></i>
               </div>
@@ -441,43 +491,9 @@ Overland Traveller, seeking inspiration and adventure.
                 <div class="timeline-details-inner">
                   <ul>
                   <li>Designed and implemented a comprehensive test automation strategy in collaboration with project leads.</li>
-                  <li>Supported development of a UI-based automation framework, automating a process with no existing industry-standard tooling.</li>
-                  <li>Managed and supported a team of four onshore and offshore resources, ensuring effective communication and successful execution of testing activities.</li>
-                  <li>Presented test automation solutions to IBM and external stakeholders, gathering feedback to enhance processes and ensure thorough test coverage.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="timeline-rail">
-              <span class="timeline-dot"><i class="bi bi-briefcase"></i></span>
-            </div>
-            <div class="timeline-side timeline-side-right"></div>
-          </div><!-- End Timeline Item -->
-
-          <div class="timeline-item timeline-right" data-type="work">
-            <div class="timeline-side timeline-side-left"></div>
-            <div class="timeline-rail">
-              <span class="timeline-dot"><i class="bi bi-briefcase"></i></span>
-            </div>
-            <div class="timeline-side timeline-side-right">
-            <div class="timeline-card">
-              <div class="timeline-node" role="button" tabindex="0" aria-expanded="false">
-                <div class="timeline-node-text">
-                  <span class="timeline-date">Aug 2023 - Mar 2024</span>
-                  <h4>Test Development Engineer - Maximo</h4>
-                  <p class="timeline-company">Teck Resources Inc., Canada</p>
-                </div>
-                <i class="bi bi-chevron-down timeline-chevron"></i>
-              </div>
-              <div class="timeline-details">
-                <div class="timeline-details-inner">
-                  <ul>
-                  <li>Led Maximo implementation testing efforts, including reviewing design documentation and creating test flows for built-in and custom applications.</li>
-                  <li>Conducted functional testing for Maximo applications, covering end-user use cases, security, and role-based content management.</li>
-                  <li>Organized and facilitated defect triage calls, supported test team management, and tracked progress and reporting for stakeholders.</li>
-                  <li>Compiled release statistics for internal and client-facing reports, ensuring clear communication of project status and outcomes.</li>
-                  <li>Presented new features to client teams, addressed questions, and resolved scenarios identified during pre-production evaluations.</li>
+                  <li>Supported development of a UI-based automation framework for a custom desktop application with no existing industry-standard tooling, automating retrieval, editing, and resubmission of check-image exchange files.</li>
+                  <li>Managed and supported a team of four onshore and offshore resources, covering communication, automation development, and test execution.</li>
+                  <li>Presented test automation solutions to IBM and external stakeholders and gathered feedback to improve processes and coverage.</li>
                   </ul>
                 </div>
               </div>
@@ -490,20 +506,19 @@ Overland Traveller, seeking inspiration and adventure.
             <div class="timeline-card">
               <div class="timeline-node" role="button" tabindex="0" aria-expanded="false">
                 <div class="timeline-node-text">
-                  <span class="timeline-date">Mar 2023 - Aug 2023</span>
-                  <h4>Test Specialist</h4>
-                  <p class="timeline-company">Immigration, Refugees and Citizenship Canada, Canada</p>
+                  <span class="timeline-date">Aug 2023 - Mar 2024</span>
+                  <h4>Test Development Engineer, Maximo</h4>
+                  <p class="timeline-company">IBM Canada Consulting &middot; Client: Teck Resources Inc.</p>
                 </div>
                 <i class="bi bi-chevron-down timeline-chevron"></i>
               </div>
               <div class="timeline-details">
                 <div class="timeline-details-inner">
                   <ul>
-                  <li>Analyzed 19 user stories covering features and integration services to define API and functionality requirements.</li>
-                  <li>Developed test cases, created test automation scripts, and executed tests based on detailed requirements.</li>
-                  <li>Collaborated iteratively with developers to identify and resolve defects within project timelines, ensuring quality deliverables.</li>
-                  <li>Used AWS CodeCommit, DynamoDB, Cognito, and CloudWatch for deployments, test data creation, verification, and log analysis.</li>
-                  <li>Managed projects and test cases using Jira and Azure DevOps; set up and executed API tests using Postman.</li>
+                  <li>Led IBM Maximo implementation testing for complex client customizations: reviewed design documentation, developed feature tests, and created test flows for built-in and custom applications.</li>
+                  <li>Conducted functional testing covering end-user use cases, security, and role-based content management.</li>
+                  <li>Organized and facilitated defect triage calls, supported test team management, and tracked progress with regular stakeholder reporting.</li>
+                  <li>Compiled release statistics for internal and client-facing reports, and presented new features to client teams, resolving scenarios found during pre-production evaluations.</li>
                   </ul>
                 </div>
               </div>
@@ -524,21 +539,135 @@ Overland Traveller, seeking inspiration and adventure.
             <div class="timeline-card">
               <div class="timeline-node" role="button" tabindex="0" aria-expanded="false">
                 <div class="timeline-node-text">
-                  <span class="timeline-date">Nov 2021 - Mar 2023</span>
-                  <h4>Test Development Engineer</h4>
-                  <p class="timeline-company">TD Bank Group, Canada</p>
+                  <span class="timeline-date">Mar 2023 - Aug 2023</span>
+                  <h4>Test Specialist</h4>
+                  <p class="timeline-company">IBM Canada Consulting &middot; Client: Immigration, Refugees and Citizenship Canada, Online Passport Renewal</p>
                 </div>
                 <i class="bi bi-chevron-down timeline-chevron"></i>
               </div>
               <div class="timeline-details">
                 <div class="timeline-details-inner">
                   <ul>
-                  <li>Worked on the Reporting and Dashboard component of a larger project, generating custom reports and ensuring data accuracy across reports and dashboards.</li>
-                  <li>Analyzed user stories with business system analysts, developers, and test teams to define and develop an effective test strategy.</li>
-                  <li>Designed system flow models using Ignite modeling tools, supporting test scenario development for onshore and offshore testing teams.</li>
-                  <li>Managed cross-functional resources to ensure successful test execution aligned with defined scenarios and project objectives.</li>
-                  <li>Created detailed flow diagrams and simulation/virtualization data request documentation to support testing and system validation.</li>
-                  <li>Presented test scenarios and design flow documentation to internal and client teams, addressing questions and modifications.</li>
+                  <li>Analyzed 19 user stories covering features and integration services to define API and functionality requirements.</li>
+                  <li>Developed test cases, created test automation scripts, and executed tests against detailed requirements, working iteratively with developers to resolve defects within project timelines.</li>
+                  <li>Used AWS services (CodeCommit, DynamoDB, Cognito, CloudWatch) for deployments, test data creation, verification, and log analysis.</li>
+                  <li>Managed projects and test cases in Jira and Azure DevOps; set up test automation and executed API tests using Postman.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div><!-- End Timeline Item -->
+
+          <div class="timeline-item timeline-left" data-type="work">
+            <div class="timeline-side timeline-side-left">
+            <div class="timeline-card">
+              <div class="timeline-node" role="button" tabindex="0" aria-expanded="false">
+                <div class="timeline-node-text">
+                  <span class="timeline-date">Nov 2021 - Mar 2023</span>
+                  <h4>Test Development Engineer</h4>
+                  <p class="timeline-company">IBM Canada Consulting &middot; Client: TD Bank Group, Reporting and Dashboard</p>
+                </div>
+                <i class="bi bi-chevron-down timeline-chevron"></i>
+              </div>
+              <div class="timeline-details">
+                <div class="timeline-details-inner">
+                  <ul>
+                  <li>Worked on the Reporting and Dashboard feature of a larger project, generating custom reports from requirements and ensuring data accuracy across reports and dashboards.</li>
+                  <li>Analyzed user stories with business system analysts, developers, and test teams to define an effective test strategy.</li>
+                  <li>Designed system flow models using Ignite Modeling tools to guide test scenarios for onshore and offshore testing teams, and managed cross-functional resources so execution matched defined scenarios.</li>
+                  <li>Created detailed flow diagrams and service virtualization data request documentation, and presented test scenarios and design flows to internal and client teams.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="timeline-rail">
+              <span class="timeline-dot"><i class="bi bi-briefcase"></i></span>
+            </div>
+            <div class="timeline-side timeline-side-right"></div>
+          </div><!-- End Timeline Item -->
+
+          <div class="timeline-item timeline-right" data-type="work">
+            <div class="timeline-side timeline-side-left"></div>
+            <div class="timeline-rail">
+              <span class="timeline-dot"><i class="bi bi-briefcase"></i></span>
+            </div>
+            <div class="timeline-side timeline-side-right">
+            <div class="timeline-card">
+              <div class="timeline-node" role="button" tabindex="0" aria-expanded="false">
+                <div class="timeline-node-text">
+                  <span class="timeline-date">May 2021 - Nov 2021</span>
+                  <h4>Automation Engineer</h4>
+                  <p class="timeline-company">IBM Canada Consulting &middot; Client: The Northern Trust Company</p>
+                </div>
+                <i class="bi bi-chevron-down timeline-chevron"></i>
+              </div>
+              <div class="timeline-details">
+                <div class="timeline-details-inner">
+                  <ul>
+                  <li>Worked on a complex trading application as part of the automation team.</li>
+                  <li>Designed data mapping infrastructure using Java, Maven, and Microsoft Excel.</li>
+                  <li>Wrote custom Python scripts for time-consuming conditional scenarios, cutting processing time from hours to seconds.</li>
+                  <li>Troubleshot issues for the testing team to find root causes, and used Jira for task management while the team transitioned to an agile approach.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div><!-- End Timeline Item -->
+
+          <div class="timeline-item timeline-left" data-type="work">
+            <div class="timeline-side timeline-side-left">
+            <div class="timeline-card">
+              <div class="timeline-node" role="button" tabindex="0" aria-expanded="false">
+                <div class="timeline-node-text">
+                  <span class="timeline-date">May 2020 - May 2021</span>
+                  <h4>Test Automation Specialist</h4>
+                  <p class="timeline-company">IBM Canada Consulting &middot; Client: Prairie Payments Initiative, Payments Canada</p>
+                </div>
+                <i class="bi bi-chevron-down timeline-chevron"></i>
+              </div>
+              <div class="timeline-details">
+                <div class="timeline-details-inner">
+                  <ul>
+                  <li>Lead test automation engineer on a cloud-based integration platform connecting credit unions across Manitoba, Saskatchewan, and Alberta to Interac, Automated Funds Transfer, cheques, wires, and bill payments, working directly with developers and the solution architect.</li>
+                  <li>Wrote Postman test cases for microservices APIs: confirmed expected responses, compared request and response identifiers, and checked header values.</li>
+                  <li>Added pre-request scripts that parse response data from one API for use in the next, and JavaScript that generates unique test data on every request, saving large amounts of regression testing time.</li>
+                  <li>Helped move the Postman collections into Apache JMeter, and set up scheduled automated test runs through a GitHub pipeline with failure notifications.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="timeline-rail">
+              <span class="timeline-dot"><i class="bi bi-briefcase"></i></span>
+            </div>
+            <div class="timeline-side timeline-side-right"></div>
+          </div><!-- End Timeline Item -->
+
+          <div class="timeline-item timeline-right" data-type="work">
+            <div class="timeline-side timeline-side-left"></div>
+            <div class="timeline-rail">
+              <span class="timeline-dot"><i class="bi bi-briefcase"></i></span>
+            </div>
+            <div class="timeline-side timeline-side-right">
+            <div class="timeline-card">
+              <div class="timeline-node" role="button" tabindex="0" aria-expanded="false">
+                <div class="timeline-node-text">
+                  <span class="timeline-date">Oct 2019 - Mar 2020</span>
+                  <h4>Functional Test Specialist</h4>
+                  <p class="timeline-company">IBM Canada Consulting &middot; Client: City National Bank, Mobile Platform</p>
+                </div>
+                <i class="bi bi-chevron-down timeline-chevron"></i>
+              </div>
+              <div class="timeline-details">
+                <div class="timeline-details-inner">
+                  <ul>
+                  <li>Delivered and deployed the mobile platform for 340,000+ customers; developed test strategy and design with client teams and executed front-end and API tests through to production.</li>
+                  <li>Found API and mobile defects, including integration defects, and created action items to resolve them; ran defect triage meetings and facilitated regression and smoke testing.</li>
+                  <li>Worked on mobile app content management, keeping app and website event flows in sync, and designed user flowcharts for the whole mobile application.</li>
+                  <li>Served as test data management specialist and liaison between the client and IBM so all test data was available; created regression test cases and runs in Jira.</li>
                   </ul>
                 </div>
               </div>
@@ -551,16 +680,17 @@ Overland Traveller, seeking inspiration and adventure.
             <div class="timeline-card">
               <div class="timeline-node" role="button" tabindex="0" aria-expanded="false">
                 <div class="timeline-node-text">
-                  <span class="timeline-date">2021</span>
-                  <h4>IBM Leadership Academy</h4>
-                  <p class="timeline-company">Ivey Business School</p>
+                  <span class="timeline-date">Certifications</span>
+                  <h4>AWS Cloud Practitioner</h4>
+                  <p class="timeline-company">Amazon Web Services</p>
                 </div>
                 <i class="bi bi-chevron-down timeline-chevron"></i>
               </div>
               <div class="timeline-details">
                 <div class="timeline-details-inner">
                   <ul>
-                  <li>Completed IBM Consulting’s internal leadership development program, delivered in partnership with Ivey Business School, focused on people leadership, strategic thinking, and client relationship skills.</li>
+                  <li>Foundational certification covering AWS core services, cloud concepts, security, and pricing.</li>
+                  <li><strong>Selenium IDE:</strong> Udemy certification in browser test automation.</li>
                   </ul>
                 </div>
               </div>
@@ -581,16 +711,17 @@ Overland Traveller, seeking inspiration and adventure.
             <div class="timeline-card">
               <div class="timeline-node" role="button" tabindex="0" aria-expanded="false">
                 <div class="timeline-node-text">
-                  <span class="timeline-date">2021</span>
-                  <h4>AWS Certified Solutions Architect Associate</h4>
-                  <p class="timeline-company">Udemy</p>
+                  <span class="timeline-date">Training</span>
+                  <h4>IBM and Google Cloud Training</h4>
+                  <p class="timeline-company">IBM badges &middot; Google Cloud courses</p>
                 </div>
                 <i class="bi bi-chevron-down timeline-chevron"></i>
               </div>
               <div class="timeline-details">
                 <div class="timeline-details-inner">
                   <ul>
-                  <li>Certification covering AWS core services and cloud architecture best practices, including EC2, S3, VPC, IAM, and designing resilient, cost-effective systems on AWS.</li>
+                  <li><strong>IBM badges:</strong> Enterprise Design Thinking Practitioner, Agile Explorer, Cognitive Practitioner, Docker Essentials, Blockchain Essentials, Microservices with Istio and IBM Cloud Kubernetes Service, Quantum Communications.</li>
+                  <li><strong>Google Cloud:</strong> Generative AI, Large Language Models, Responsible AI, Digital Transformation, and Modernize Infrastructure and Applications.</li>
                   </ul>
                 </div>
               </div>
@@ -598,102 +729,8 @@ Overland Traveller, seeking inspiration and adventure.
           </div>
           </div><!-- End Timeline Item -->
 
-          <div class="timeline-item timeline-left" data-type="work">
+          <div class="timeline-item timeline-left" data-type="education">
             <div class="timeline-side timeline-side-left">
-            <div class="timeline-card">
-              <div class="timeline-node" role="button" tabindex="0" aria-expanded="false">
-                <div class="timeline-node-text">
-                  <span class="timeline-date">May 2021 - Nov 2021</span>
-                  <h4>Automation Engineer</h4>
-                  <p class="timeline-company">The Northern Trust Company, Canada</p>
-                </div>
-                <i class="bi bi-chevron-down timeline-chevron"></i>
-              </div>
-              <div class="timeline-details">
-                <div class="timeline-details-inner">
-                  <ul>
-                  <li>Worked on a complex trading application as part of the Automation team.</li>
-                  <li>Designed data mapping infrastructure using Java, the Maven framework, and Microsoft Excel.</li>
-                  <li>Developed custom Python scripts to address time-consuming complexities, reducing conditional scenario processing time from hours to seconds.</li>
-                  <li>Troubleshot issues for the testing team, identifying and addressing root causes.</li>
-                  <li>Used Jira for task management while working on a team transitioning to an agile approach.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="timeline-rail">
-              <span class="timeline-dot"><i class="bi bi-briefcase"></i></span>
-            </div>
-            <div class="timeline-side timeline-side-right"></div>
-          </div><!-- End Timeline Item -->
-
-          <div class="timeline-item timeline-right" data-type="work">
-            <div class="timeline-side timeline-side-left"></div>
-            <div class="timeline-rail">
-              <span class="timeline-dot"><i class="bi bi-briefcase"></i></span>
-            </div>
-            <div class="timeline-side timeline-side-right">
-            <div class="timeline-card">
-              <div class="timeline-node" role="button" tabindex="0" aria-expanded="false">
-                <div class="timeline-node-text">
-                  <span class="timeline-date">May 2020 - May 2021</span>
-                  <h4>Test Automation Specialist</h4>
-                  <p class="timeline-company">Prairie Payments Initiative - Digital Integration Pattern, Canada</p>
-                </div>
-                <i class="bi bi-chevron-down timeline-chevron"></i>
-              </div>
-              <div class="timeline-details">
-                <div class="timeline-details-inner">
-                  <ul>
-                  <li>Wrote test cases for microservices APIs using Postman, validating responses, comparing request/response identifiers, and verifying header values.</li>
-                  <li>Built pre-request scripts to automatically parse response data from one API for use in subsequent calls, reducing regression testing time across the full API suite.</li>
-                  <li>Wrote JavaScript scripts in Postman to automate unique test data creation, so concurrent requests could run without conflicts.</li>
-                  <li>Collaborated with the testing team to transition Postman test collections into Apache JMeter.</li>
-                  <li>Set up automated, scheduled test runs using a GitHub pipeline to keep API test coverage current and catch failures early.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div><!-- End Timeline Item -->
-
-          <div class="timeline-item timeline-left" data-type="work">
-            <div class="timeline-side timeline-side-left">
-            <div class="timeline-card">
-              <div class="timeline-node" role="button" tabindex="0" aria-expanded="false">
-                <div class="timeline-node-text">
-                  <span class="timeline-date">Oct 2019 - Mar 2020</span>
-                  <h4>Functional Test Specialist</h4>
-                  <p class="timeline-company">IBM - City National Bank (CNB), Canada</p>
-                </div>
-                <i class="bi bi-chevron-down timeline-chevron"></i>
-              </div>
-              <div class="timeline-details">
-                <div class="timeline-details-inner">
-                  <ul>
-                  <li>Worked on content management for the bank’s mobile application, including digital asset management and workflow automation for testing various event flows.</li>
-                  <li>Identified API and mobile defects, including integration issues, and created action items to drive resolution.</li>
-                  <li>Designed user flowcharts for the mobile application using object-oriented design practices, and created regression test cases and test runs in Jira.</li>
-                  <li>Ran defect triage meetings and facilitated regression and smoke testing, recording and analyzing results to continuously improve the testing process.</li>
-                  <li>Served as Test Data Management specialist, acting as liaison between the client and IBM to ensure all required test data was available.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="timeline-rail">
-              <span class="timeline-dot"><i class="bi bi-briefcase"></i></span>
-            </div>
-            <div class="timeline-side timeline-side-right"></div>
-          </div><!-- End Timeline Item -->
-
-          <div class="timeline-item timeline-right" data-type="education">
-            <div class="timeline-side timeline-side-left"></div>
-            <div class="timeline-rail">
-              <span class="timeline-dot"><i class="bi bi-mortarboard"></i></span>
-            </div>
-            <div class="timeline-side timeline-side-right">
             <div class="timeline-card">
               <div class="timeline-node" role="button" tabindex="0" aria-expanded="false">
                 <div class="timeline-node-text">
@@ -706,7 +743,6 @@ Overland Traveller, seeking inspiration and adventure.
               <div class="timeline-details">
                 <div class="timeline-details-inner">
                   <ul>
-                  <li>IEEE Canadian Foundation Scholar Award.</li>
                   <li><strong>Java:</strong> Analyzed, designed, and implemented a banking application using Java and JavaFX in Eclipse, applying UML diagrams and engineering design patterns, and testing with black-box and white-box methods.</li>
                   <li><strong>C:</strong> Programmed a multi-purpose media centre on an ARM Cortex M3 (MCB1700 board, uVision) using RTX real-time scheduling, multithreading, and conditional execution.</li>
                   </ul>
@@ -714,10 +750,18 @@ Overland Traveller, seeking inspiration and adventure.
               </div>
             </div>
           </div>
+            <div class="timeline-rail">
+              <span class="timeline-dot"><i class="bi bi-mortarboard"></i></span>
+            </div>
+            <div class="timeline-side timeline-side-right"></div>
           </div><!-- End Timeline Item -->
 
-          <div class="timeline-item timeline-left" data-type="cert">
-            <div class="timeline-side timeline-side-left">
+          <div class="timeline-item timeline-right" data-type="cert">
+            <div class="timeline-side timeline-side-left"></div>
+            <div class="timeline-rail">
+              <span class="timeline-dot"><i class="bi bi-award"></i></span>
+            </div>
+            <div class="timeline-side timeline-side-right">
             <div class="timeline-card">
               <div class="timeline-node" role="button" tabindex="0" aria-expanded="false">
                 <div class="timeline-node-text">
@@ -736,18 +780,10 @@ Overland Traveller, seeking inspiration and adventure.
               </div>
             </div>
           </div>
-            <div class="timeline-rail">
-              <span class="timeline-dot"><i class="bi bi-award"></i></span>
-            </div>
-            <div class="timeline-side timeline-side-right"></div>
           </div><!-- End Timeline Item -->
 
-          <div class="timeline-item timeline-right" data-type="work">
-            <div class="timeline-side timeline-side-left"></div>
-            <div class="timeline-rail">
-              <span class="timeline-dot"><i class="bi bi-briefcase"></i></span>
-            </div>
-            <div class="timeline-side timeline-side-right">
+          <div class="timeline-item timeline-left" data-type="work">
+            <div class="timeline-side timeline-side-left">
             <div class="timeline-card">
               <div class="timeline-node" role="button" tabindex="0" aria-expanded="false">
                 <div class="timeline-node-text">
@@ -760,21 +796,24 @@ Overland Traveller, seeking inspiration and adventure.
               <div class="timeline-details">
                 <div class="timeline-details-inner">
                   <ul>
-                  <li>Performed Schematic Modeling Analysis and Hardware Review for Telecom, Consumer, and Aerospace &amp; Defense customer designs using Cadence’s Concept HDL and Allegro.</li>
-                  <li>Created component models using Celestica’s proprietary Schematic Modeling Tools, reviewing vendor-supplied datasheets and extracting data.</li>
-                  <li>Helped create, review, and submit professional Schematic Modeling reports, ensuring correct technical and grammatical content.</li>
-                  <li>Learned the fundamentals of Signal Integrity using IBIS models in Mentor Hyperlynx, with a particular focus on the DDR3 SDRAM interface and timing analysis.</li>
+                  <li>Performed Schematic Modeling Analysis and Hardware Review for Telecom, Consumer, and Aerospace &amp; Defense customer designs using Cadence Concept HDL and Allegro.</li>
+                  <li>Created component models using Celestica&rsquo;s proprietary Schematic Modeling Tools, reviewing vendor datasheets and extracting data.</li>
+                  <li>Helped create, review, and submit professional Schematic Modeling reports, ensuring technical and grammatical accuracy.</li>
+                  <li>Learned the fundamentals of Signal Integrity using IBIS models in Mentor Hyperlynx, with a focus on the DDR3 SDRAM interface and timing analysis.</li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
+            <div class="timeline-rail">
+              <span class="timeline-dot"><i class="bi bi-briefcase"></i></span>
+            </div>
+            <div class="timeline-side timeline-side-right"></div>
           </div><!-- End Timeline Item -->
 
         </div>
 
       </div>
-
 
     </section><!-- /Resume Section -->
 
